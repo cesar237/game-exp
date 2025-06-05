@@ -1,0 +1,34 @@
+- Hyperthreading
+    - enabled
+    - disabled
+
+# Power Management concepts
+- CPU governor (Energy Policy)
+    *Note to enable or disable intel_pstate driver (HWP), just write in `/sys/devices/system/cpu/intel_pstate/status`*
+    - HWP (Hardware Managed P-state) when intel_pstate is active (driver=intel_pstate) (Sandy Bridge and More)
+        - Powersave (=schedutil)
+            * powersave
+            * performance
+        - performance
+    - Intel P-state set to be passive (driver=intel_cpufreq)
+        - powersave 
+        - performance
+        - schedutil
+- Turbo P-state
+    - Enabled
+    - Disabled
+
+# Asymmetry-aware Scheduling Concepts
+- Scheduler
+    - CFS
+    - CFS + EAS
+
+- CPU Configuration
+    - 6P
+    - 4P-2E
+    - 3P-3E
+    - 2P-4E
+    - 6E
+- core shutdown policy
+    - takset
+    - cpuset (write in /sys/devices/system/cpu/cpu*/control)

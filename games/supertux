@@ -1,0 +1,8 @@
+name=SuperTux
+type=Platform
+implementation=Multi-threaded
+launch_command=supertux2
+source_code=yes
+github=https://github.com/SuperTux/supertux.git
+game_session=st2.yaml
+game_cmd=supertux2

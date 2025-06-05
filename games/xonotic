@@ -1,0 +1,8 @@
+name=Xonotic
+type=FPS
+implementation=Multi-threaded
+launch_command=/home/cmounahh/Documents/games/xonotic-0.8.6/Xonotic/xonotic-linux-sdl.sh
+source_code=yes
+github=https://github.com/xonotic/xonotic.git
+game_session=xono.yaml
+comm=xonotic

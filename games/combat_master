@@ -1,0 +1,7 @@
+name=Combat Master
+type=FPS
+implementation=Multi-threaded
+launch_command=steam steam://rungameid/2281730
+source_code=no
+game_session=combat_master.yaml
+comm=CombatMaster

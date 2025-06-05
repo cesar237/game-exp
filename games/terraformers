@@ -1,0 +1,6 @@
+name=Terraformers
+type=RTS
+implementation=Multi-threaded
+launch_command=steam steam://rungameid/1557040
+source_code=no
+game_session=terraformers.yaml

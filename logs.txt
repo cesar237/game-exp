@@ -1,0 +1,7 @@
+xonotic
+[24-06-07_11-43-21] Current config:
+[24-06-07_11-43-21] EAS=1
+[24-06-07_11-43-21] HT=on
+[24-06-07_11-43-21] PSTATE=1
+[24-06-07_11-43-21] governor=performance
+[24-06-07_11-43-21] Starting test with game=xonotic EAS=1 HT=on PSTATE=1 governor=performance

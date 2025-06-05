@@ -1,0 +1,6 @@
+name=Battle Tanks: Legend of World War II
+type=Simulation
+implementation=Multi-threaded
+launch_command=steam steam://rungameid/782670
+source_code=no
+game_session=btww2.yaml

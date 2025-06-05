@@ -1,0 +1,7 @@
+name=Counter Strike 2
+type=FPS
+implementation=Multi-threaded
+launch_command=steam steam://rungameid/730
+source_code=no
+game_session=cs2.yaml
+comm=cs2

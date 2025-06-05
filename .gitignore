@@ -1,0 +1,15 @@
+logs
+current_exp
+.ipynb_checkpoints/
+*sched_trace*
+final_res_final*
+combat-master-res
+power_combat_master
+results--on-active-performance
+stash_res
+temp_results
+xonotic-res
+old_results
+xonotic-res.zip
+combat-master-res.zip
+*.zip
