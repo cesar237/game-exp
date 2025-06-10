@@ -9,6 +9,8 @@
 
 # $1 is the game to launch
 # $2 is the output file
+# To know the dev event source for keyboard and mouse, you should:
+# ls -lah /dev/input/by-id/
 
 source ./get_attribute.sh
 
@@ -24,5 +26,6 @@ game=$(get_attribute games/$1 launch_command)
 game_session=$(get_attribute games/$1 game_session)
 
 
-mangohud --dlsym $game &
+#mangohud --dlsym $game &
+$game &
 sudo chrt -f 2 libinput record -o recorded_game_sessions/$game_session --show-keycodes $MOUSE_INPUT $KEYBOARD_INPUT

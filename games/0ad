@@ -1,7 +1,8 @@
-name=0.a.d
+name=0ad
 type=RTS
 implementation=Multi-threaded
 launch_command=0ad
 source_code=yes
 github=https://github.com/0ad/0ad.git
 game_session=0ad.yaml
+exit_comm=pyrogenesis
