@@ -5,9 +5,9 @@ import argparse
 parser = argparse.ArgumentParser()
 parser.add_argument('-c', '--config', required=True, help="Configuration (in format XP, XE or XP-XE)")
 parser.add_argument('-H', '--hyperthreaded', default=False, action='store_true', help="Set if hyperthreaded")
-parser.add_argument('-o', '--output', default=None, type=str, help='Output file')
-parser.add_argument('-e', '--n-ecores', required=True, help='Number of E cores', type=int)
-parser.add_argument('-t', '--n-cores', required=True, help='Number of all cores', type=int)
+parser.add_argument('-o', '--output', default=None, type=str, help='Output file', required=False)
+parser.add_argument('-e', '--n-ecores', required=False, default=16, help='Number of E cores', type=int)
+parser.add_argument('-t', '--n-cores', required=False, default=32, help='Number of all cores', type=int)
 
 args = parser.parse_args()
 

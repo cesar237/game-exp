@@ -16,16 +16,23 @@ reinit_cpu() {
 
 set_cpuconfig() {
     # This function activate or deactivate CPU core list.
-    TOTAL=32
+    TOTAL=31
+    echo Setting cpu config $1...
 
     # First deactivate all cores
-    for cpu in `seq 2 $TOTAL`; do
+    echo "First, deactivate all cores..."
+    for cpu in `seq 1 $TOTAL`; do
+	echo "    - Deactivating core $cpu..."
         cpuset $cpu 0
     done
 
     # Second, activate only relevant cores
+    echo "Second, activate relevant cores..."
     cores=$(echo $1 | tr ',' ' ')
     for cpu in $cores; do
+        echo "    - Activating core $cpu..."
         cpuset $cpu 1
     done
+
+    echo "Done!"
 }
