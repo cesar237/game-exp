@@ -48,6 +48,7 @@ sleep 100
 sudo pkill -f perf
 pkill -f $exit_comm
 pkill -f libinput
+sudo pkill -f turbostat
 
 outputs="turbostat_$1.txt perf_record.data threads.txt"
 here=`$now`

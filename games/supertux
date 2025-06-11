@@ -6,3 +6,4 @@ source_code=yes
 github=https://github.com/SuperTux/supertux.git
 game_session=st2.yaml
 game_cmd=supertux2
+exit_comm=supertux2
