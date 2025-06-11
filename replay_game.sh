@@ -26,8 +26,8 @@ exit_comm=$(get_attribute games/$1 exit_comm)
 
 sudo rm /etc/libinput/local-overrides.quirks
 echo $game,recorded_game_sessions/$game_session
-#mangohud --dlsym $game &
-$game &
+mangohud --dlsym $game &
+#$game &
 libinput replay --replay-after 10 ./recorded_game_sessions/$game_session &
 
 sleep 10
@@ -50,5 +50,7 @@ pkill -f $exit_comm
 pkill -f libinput
 
 outputs="turbostat_$1.txt perf_record.data threads.txt"
-mkdir -p results/$1/`$now`
-mv $outputs results/$1/`$now`
+here=`$now`
+mkdir -p results/$1/$here
+mv $outputs results/$1/$here
+mv $(ls ~ | grep csv) results/$1/$here
